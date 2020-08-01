@@ -10,13 +10,13 @@ public class Start {
 
     public Start(UserRepository userRepository, PasswordEncoder passwordEncoder) {
         User admin = new User();
-        admin.setLogin("Marian");
+        admin.setUsername("Marian");
         admin.setPassword(passwordEncoder.encode("Broda"));
         admin.setRole("ROLE_ADMIN");
         userRepository.save(admin);
 
         User user = new User();
-        user.setLogin("Dariusz");
+        user.setUsername("Dariusz");
         user.setPassword(passwordEncoder.encode("Popa"));
         user.setRole("ROLE_USER");
         userRepository.save(user);

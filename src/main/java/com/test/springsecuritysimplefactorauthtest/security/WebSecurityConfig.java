@@ -27,6 +27,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userDetailsService);
     }
 
+    //TODO login forms
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
