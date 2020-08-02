@@ -1,4 +1,4 @@
-package com.test.springsecuritysimplefactorauthtest.security;
+package com.test.springsecuritysimplefactorauthtest.model;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -17,6 +17,7 @@ public class User implements UserDetails {
     private String username;
     private String password;
     private String role;
+    private boolean isEnabled;
 
     public User(String username, String password, String role) {
         this.username = username;
@@ -25,6 +26,10 @@ public class User implements UserDetails {
     }
 
     public User() {
+    }
+
+    public void setEnabled(boolean enabled) {
+        isEnabled = enabled;
     }
 
     @Override
@@ -54,7 +59,7 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return isEnabled;
     }
 
     public Integer getId() {

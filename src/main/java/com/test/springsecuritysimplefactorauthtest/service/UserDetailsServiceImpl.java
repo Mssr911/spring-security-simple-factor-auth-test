@@ -1,5 +1,6 @@
-package com.test.springsecuritysimplefactorauthtest.security;
+package com.test.springsecuritysimplefactorauthtest.service;
 
+import com.test.springsecuritysimplefactorauthtest.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

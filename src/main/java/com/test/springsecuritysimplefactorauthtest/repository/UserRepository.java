@@ -1,5 +1,6 @@
-package com.test.springsecuritysimplefactorauthtest.security;
+package com.test.springsecuritysimplefactorauthtest.repository;
 
+import com.test.springsecuritysimplefactorauthtest.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
